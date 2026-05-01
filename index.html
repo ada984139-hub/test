@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PelețiPro — Magazin Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden>
+          <!-- Bază roșie - mai lată -->
+          <path d="M24 42 C18 40 12 35 12 28 C12 20 15 12 24 6 C33 12 36 20 36 28 C36 35 30 40 24 42 Z" fill="#E63946" opacity="0.95"/>
+          
+          <!-- Strat portocaliu cald - mai larg -->
+          <path d="M24 40 C19 38 14 33 14 27 C14 21 17 14 24 8 C31 14 34 21 34 27 C34 33 29 38 24 40 Z" fill="#FF7A00" opacity="0.9"/>
+          
+          <!-- Strat galben interior - mai larg -->
+          <path d="M24 38 C20 36 16 31 16 26 C16 22 18 16 24 10 C30 16 32 22 32 26 C32 31 28 36 24 38 Z" fill="#FFD700" opacity="0.85"/>
+          
+          <!-- Scânteie roșie pe lateral stâng -->
+          <path d="M14 32 Q10 28 8 22 Q10 18 14 17" fill="none" stroke="#E63946" stroke-width="2.5" opacity="0.7"/>
+          
+          <!-- Scânteie roșie pe lateral drept -->
+          <path d="M34 32 Q38 28 40 22 Q38 18 34 17" fill="none" stroke="#E63946" stroke-width="2.5" opacity="0.7"/>
+          
+          <!-- Luciu galben deasupra -->
+          <ellipse cx="24" cy="14" rx="4" ry="6" fill="#FFEB3B" opacity="0.6"/>
+        </svg>
+        <span>PelețiPro</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#produse">Produse</a>
+        <a href="about.html">Despre noi</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-selector">
+          <button class="lang-toggle" id="langToggle" aria-label="Language">EN</button>
+          <div class="lang-menu" id="langMenu">
+            <button class="lang-option" data-lang="ro" data-flag="🇷🇴">🇷🇴 Română</button>
+            <button class="lang-option" data-lang="en" data-flag="🇬🇧">🇬🇧 English</button>
+            <button class="lang-option" data-lang="de" data-flag="🇩🇪">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="fr" data-flag="🇫🇷">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="es" data-flag="🇪🇸">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="it" data-flag="🇮🇹">🇮🇹 Italiano</button>
+            <button class="lang-option" data-lang="hu" data-flag="🇭🇺">🇭🇺 Magyar</button>
+            <button class="lang-option" data-lang="sr" data-flag="🇷🇸">🇷🇸 Srpski</button>
+            <button class="lang-option" data-lang="pl" data-flag="🇵🇱">🇵🇱 Polski</button>
+            <button class="lang-option" data-lang="bg" data-flag="🇧🇬">🇧🇬 Български</button>
+            <button class="lang-option" data-lang="uk" data-flag="🇺🇦">🇺🇦 Українська</button>
+            <button class="lang-option" data-lang="ru" data-flag="🇷🇺">🇷🇺 Русский</button>
+            <button class="lang-option" data-lang="zh" data-flag="🇨🇳">🇨🇳 中文</button>
+          </div>
+        </div>
+        <button class="cart-btn" id="cartBtn" aria-label="Cos">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l1 12h12" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Peleți de înaltă calitate pentru confortul casei tale</h1>
+        <p>Livrări rapide, energie eficientă și selecție atentă de peleți din lemn 100% natural.</p>
+        <a href="#produse" class="btn btn-primary">Vezi produsele</a>
+      </div>
+      <div class="hero-image" aria-hidden>
+        <img src="https://picsum.photos/seed/pellets-hero/800/520" alt="Saci de peleți">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produse -->
+  <main>
+    <section id="produse" class="section fade-in">
+      <div class="container">
+        <h2 class="section-title">Produse populare</h2>
+        <p class="section-sub">Alege dintre mai multe tipuri de peleți, ambalaje și prețuri convenabile.</p>
+        <div id="productsGrid" class="products-grid">
+          <!-- Produsele vor fi generate din script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- B2B Bulk Orders -->
+    <section id="b2b" class="section b2b-cta fade-in">
+      <div class="container b2b-inner">
+        <div>
+          <h2>Comenzi în cantități mari?</h2>
+          <p>Pentru achizițiile de 1+ tonă, oferim discounturi speciale și condiții personalizate. Transport inclus, factură la termen și manager dedicat.</p>
+        </div>
+        <a href="https://wa.me/40799000000?text=Salut%20PelețiPro!%20Doresc%20o%20ofertă%20negociabilă%20pentru%20o%20cantitate%20mai%20mare%20de%201%20tonă%20de%20peleți." target="_blank" class="btn btn-accent">Cere ofertă negociabilă</a>
+      </div>
+    </section>
+
+    <!-- Contact section - moved below -->
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer fade-in">
+    <div class="container footer-grid">
+      <div>
+        <h3>PelețiPro</h3>
+        <p>Str. Exemplu 12, Oraș • Telefon: <a href="tel:+40123456789">+40 123 456 789</a> • Email: <a href="mailto:contact@peletipro.ro">contact@peletipro.ro</a></p>
+      </div>
+
+      <div>
+        <h4>Link-uri utile</h4>
+        <ul class="footer-links">
+          <li><a href="#produse">Produse</a></li>
+          <li><a href="about.html">Despre noi</a></li>
+          <li><a href="#">Termeni și condiții</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Plăți & Livrare</h4>
+        <p>Plăți la livrare sau transfer bancar. Livrări în 48-72h în majoritatea zonelor.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <small>© <span id="year"></span> PelețiPro — Toate drepturile rezervate</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notificare -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Cart sidebar -->
+  <aside id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Coșul tău</h3>
+      <button class="cart-close" id="cartClose" aria-label="Închide coș">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <div class="cart-empty">Coșul este gol</div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total:</span>
+        <span class="cart-total-value" id="cartTotalPrice">0 RON</span>
+      </div>
+      <button class="cart-checkout">Continuă cumpărăturile</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

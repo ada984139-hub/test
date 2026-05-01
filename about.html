@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Despre PelețiPro — Locul tău de încredere pentru peleți de calitate</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden>
+          <!-- Bază roșie - mai lată -->
+          <path d="M24 42 C18 40 12 35 12 28 C12 20 15 12 24 6 C33 12 36 20 36 28 C36 35 30 40 24 42 Z" fill="#E63946" opacity="0.95"/>
+          
+          <!-- Strat portocaliu cald - mai larg -->
+          <path d="M24 40 C19 38 14 33 14 27 C14 21 17 14 24 8 C31 14 34 21 34 27 C34 33 29 38 24 40 Z" fill="#FF7A00" opacity="0.9"/>
+          
+          <!-- Strat galben interior - mai larg -->
+          <path d="M24 38 C20 36 16 31 16 26 C16 22 18 16 24 10 C30 16 32 22 32 26 C32 31 28 36 24 38 Z" fill="#FFD700" opacity="0.85"/>
+          
+          <!-- Scânteie roșie pe lateral stâng -->
+          <path d="M14 32 Q10 28 8 22 Q10 18 14 17" fill="none" stroke="#E63946" stroke-width="2.5" opacity="0.7"/>
+          
+          <!-- Scânteie roșie pe lateral drept -->
+          <path d="M34 32 Q38 28 40 22 Q38 18 34 17" fill="none" stroke="#E63946" stroke-width="2.5" opacity="0.7"/>
+          
+          <!-- Luciu galben deasupra -->
+          <ellipse cx="24" cy="14" rx="4" ry="6" fill="#FFEB3B" opacity="0.6"/>
+        </svg>
+        <span>PelețiPro</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#produse">Produse</a>
+        <a href="about.html">Despre noi</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-selector">
+          <button class="lang-toggle" id="langToggle" aria-label="Language">EN</button>
+          <div class="lang-menu" id="langMenu">
+            <button class="lang-option" data-lang="ro" data-flag="🇷🇴">🇷🇴 Română</button>
+            <button class="lang-option" data-lang="en" data-flag="🇬🇧">🇬🇧 English</button>
+            <button class="lang-option" data-lang="de" data-flag="🇩🇪">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="fr" data-flag="🇫🇷">🇫🇷 Français</button>
+            <button class="lang-option" data-lang="es" data-flag="🇪🇸">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="it" data-flag="🇮🇹">🇮🇹 Italiano</button>
+            <button class="lang-option" data-lang="hu" data-flag="🇭🇺">🇭🇺 Magyar</button>
+            <button class="lang-option" data-lang="sr" data-flag="🇷🇸">🇷🇸 Srpski</button>
+            <button class="lang-option" data-lang="pl" data-flag="🇵🇱">🇵🇱 Polski</button>
+            <button class="lang-option" data-lang="bg" data-flag="🇧🇬">🇧🇬 Български</button>
+            <button class="lang-option" data-lang="uk" data-flag="🇺🇦">🇺🇦 Українська</button>
+            <button class="lang-option" data-lang="ru" data-flag="🇷🇺">🇷🇺 Русский</button>
+            <button class="lang-option" data-lang="zh" data-flag="🇨🇳">🇨🇳 中文</button>
+          </div>
+        </div>
+        <a href="index.html" class="cart-btn" id="cartBtn" aria-label="Back to shop">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 3h2l1 12h12" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section for About -->
+  <section class="hero about-hero" style="padding: 80px 0;">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 id="aboutHero"></h1>
+        <p id="aboutHeroSub"></p>
+      </div>
+      <div class="hero-image" aria-hidden>
+        <img src="https://picsum.photos/seed/factory/800/520" alt="Fabrica de peleți">
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Company Story Section -->
+    <section class="section fade-in">
+      <div class="container about-grid">
+        <div class="about-content">
+          <h2 id="storyTitle"></h2>
+          <p id="storyText1"></p>
+          <p id="storyText2"></p>
+          <p id="storyText3"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="section fade-in" style="background: linear-gradient(135deg, rgba(255,122,0,.1) 0%, rgba(230,57,70,.05) 100%);">
+      <div class="container">
+        <h2 id="valuesTitle" style="text-align: center; margin-bottom: 60px;"></h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🌱</div>
+            <h3 id="val1Title"></h3>
+            <p id="val1Text"></p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">⚡</div>
+            <h3 id="val2Title"></h3>
+            <p id="val2Text"></p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🎯</div>
+            <h3 id="val3Title"></h3>
+            <p id="val3Text"></p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3 id="val4Title"></h3>
+            <p id="val4Text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section fade-in">
+      <div class="container">
+        <h2 id="whyTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-number">1</div>
+            <h3 id="why1Title"></h3>
+            <p id="why1Text"></p>
+          </div>
+          <div class="why-item">
+            <div class="why-number">2</div>
+            <h3 id="why2Title"></h3>
+            <p id="why2Text"></p>
+          </div>
+          <div class="why-item">
+            <div class="why-number">3</div>
+            <h3 id="why3Title"></h3>
+            <p id="why3Text"></p>
+          </div>
+          <div class="why-item">
+            <div class="why-number">4</div>
+            <h3 id="why4Title"></h3>
+            <p id="why4Text"></p>
+          </div>
+          <div class="why-item">
+            <div class="why-number">5</div>
+            <h3 id="why5Title"></h3>
+            <p id="why5Text"></p>
+          </div>
+          <div class="why-item">
+            <div class="why-number">6</div>
+            <h3 id="why6Title"></h3>
+            <p id="why6Text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Information -->
+    <section class="section fade-in">
+      <div class="container">
+        <h2 id="productsInfoTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <h3 id="certTitle"></h3>
+            <p id="certText"></p>
+            <ul id="certList"></ul>
+          </div>
+          <div class="info-box">
+            <h3 id="sourceTitle"></h3>
+            <p id="sourceText"></p>
+            <ul id="sourceList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery & Logistics -->
+    <section class="section fade-in" style="background: linear-gradient(135deg, rgba(255,122,0,.05) 0%, rgba(230,57,70,.02) 100%);">
+      <div class="container">
+        <h2 id="deliveryTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="delivery-grid">
+          <div class="delivery-card">
+            <div class="delivery-icon">🚚</div>
+            <h3 id="deliverySpeedTitle"></h3>
+            <p id="deliverySpeedText"></p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">📦</div>
+            <h3 id="packagingTitle"></h3>
+            <p id="packagingText"></p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">🌍</div>
+            <h3 id="coverageTitle"></h3>
+            <p id="coverageText"></p>
+          </div>
+          <div class="delivery-card">
+            <div class="delivery-icon">💰</div>
+            <h3 id="priceTitle"></h3>
+            <p id="priceText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Control Process -->
+    <section class="section fade-in">
+      <div class="container">
+        <h2 id="qcTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <p id="qcIntro" style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: var(--muted); font-size: 1.05rem;"></p>
+        <div class="qc-timeline">
+          <div class="qc-step">
+            <div class="qc-step-number">1</div>
+            <h3 id="qcStep1Title"></h3>
+            <p id="qcStep1Text"></p>
+          </div>
+          <div class="qc-arrow">→</div>
+          <div class="qc-step">
+            <div class="qc-step-number">2</div>
+            <h3 id="qcStep2Title"></h3>
+            <p id="qcStep2Text"></p>
+          </div>
+          <div class="qc-arrow">→</div>
+          <div class="qc-step">
+            <div class="qc-step-number">3</div>
+            <h3 id="qcStep3Title"></h3>
+            <p id="qcStep3Text"></p>
+          </div>
+          <div class="qc-arrow">→</div>
+          <div class="qc-step">
+            <div class="qc-step-number">4</div>
+            <h3 id="qcStep4Title"></h3>
+            <p id="qcStep4Text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Environmental Commitment -->
+    <section class="section fade-in" style="background: linear-gradient(135deg, rgba(76, 175, 80, .08) 0%, rgba(76, 175, 80, .02) 100%);">
+      <div class="container">
+        <h2 id="envTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="env-grid">
+          <div class="env-card">
+            <h3 id="env1Title"></h3>
+            <p id="env1Text"></p>
+          </div>
+          <div class="env-card">
+            <h3 id="env2Title"></h3>
+            <p id="env2Text"></p>
+          </div>
+          <div class="env-card">
+            <h3 id="env3Title"></h3>
+            <p id="env3Text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="section fade-in">
+      <div class="container">
+        <h2 id="testimonialTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p id="test1Quote"></p>
+            <div class="testimonial-author">— <span id="test1Author"></span></div>
+          </div>
+          <div class="testimonial-card">
+            <p id="test2Quote"></p>
+            <div class="testimonial-author">— <span id="test2Author"></span></div>
+          </div>
+          <div class="testimonial-card">
+            <p id="test3Quote"></p>
+            <div class="testimonial-author">— <span id="test3Author"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section fade-in" style="background: var(--card);">
+      <div class="container">
+        <h2 id="contactInfoTitle" style="text-align: center; margin-bottom: 40px;"></h2>
+        <div class="contact-info-grid">
+          <div class="contact-box">
+            <h3 id="addressTitle"></h3>
+            <p id="addressText"></p>
+          </div>
+          <div class="contact-box">
+            <h3 id="phoneTitle"></h3>
+            <p id="phoneText"></p>
+          </div>
+          <div class="contact-box">
+            <h3 id="emailTitle"></h3>
+            <p id="emailText"></p>
+          </div>
+          <div class="contact-box">
+            <h3 id="hoursTitle"></h3>
+            <p id="hoursText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section fade-in" style="background: #0d0d0d;">
+      <div class="container">
+        <h2 id="qualityTitle" style="text-align: center; margin-bottom: 50px;"></h2>
+        <div class="quality-grid">
+          <div class="quality-stat">
+            <div class="stat-number" id="stat1Number"></div>
+            <p id="stat1Text"></p>
+          </div>
+          <div class="quality-stat">
+            <div class="stat-number" id="stat2Number"></div>
+            <p id="stat2Text"></p>
+          </div>
+          <div class="quality-stat">
+            <div class="stat-number" id="stat3Number"></div>
+            <p id="stat3Text"></p>
+          </div>
+          <div class="quality-stat">
+            <div class="stat-number" id="stat4Number"></div>
+            <p id="stat4Text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section fade-in">
+      <div class="container" style="text-align: center;">
+        <h2 id="ctaTitle"></h2>
+        <p id="ctaText" style="font-size: 1.1rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;"></p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#produse" class="btn btn-primary" id="shopBtn"></a>
+          <a href="index.html#contact" class="btn btn-outline" id="contactBtn"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer fade-in">
+    <div class="container footer-grid">
+      <div>
+        <h3>PelețiPro</h3>
+        <p>Str. Exemplu 12, Oraș • Telefon: <a href="tel:+40123456789">+40 123 456 789</a> • Email: <a href="mailto:contact@peletipro.ro">contact@peletipro.ro</a></p>
+      </div>
+
+      <div>
+        <h4 id="footerLinksTitle"></h4>
+        <ul class="footer-links">
+          <li><a href="index.html#produse" id="footerProducts"></a></li>
+          <li><a href="about.html" id="footerAbout"></a></li>
+          <li><a href="#" id="footerTerms"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 id="footerPayTitle"></h4>
+        <p id="footerPayText"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <small>© <span id="year"></span> PelețiPro — Toate drepturile rezervate</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notificare -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script>
+    // Apply translations on about page
+    function applyAboutPageTranslations() {
+      const t = translations[currentLang] || translations.en;
+
+      // Hero
+      document.getElementById('aboutHero').textContent = t.aboutPageHero || 'Povestea noastră de succes';
+      document.getElementById('aboutHeroSub').textContent = t.aboutPageHeroSub || 'Dedicați calității și îngreună cu clienții noștri';
+
+      // Story
+      document.getElementById('storyTitle').textContent = t.aboutPageStory || 'Povestea noastră';
+      document.getElementById('storyText1').textContent = t.aboutPageStoryText1 || 'Suntem PelețiPro, o companie cu tradiție în furnizarea de combustibili regenerabili de înaltă calitate. Cu peste 15 ani de experiență în industrie, am ajutat mii de clienți să găsească soluția perfectă de încălzire pentru casele lor.';
+      document.getElementById('storyText2').textContent = t.aboutPageStoryText2 || 'Filosofia noastră este simplă: calitate înainte de orice. Fiecare sac de peleți este supus unor teste riguroase pentru a asigura că îndeplinește standardele noastre înalte. Peleții noștri provin exclusiv din păduri certificate și sunt procesați cu grijă pentru a menține integritatea fibrelor de lemn.';
+      document.getElementById('storyText3').textContent = t.aboutPageStoryText3 || 'Astazi, suntem mândri că suntem partenerii de încredere ai mii de gospodarii și businessuri din România și din jur. Angajamentul nostru rămâne neschimbat: să oferim peleți de calitate certificată, serviciu rapid și suport dedicat pentru fiecare client.';
+
+      // Values
+      document.getElementById('valuesTitle').textContent = t.aboutPageValues || 'Valorile noastre';
+      document.getElementById('val1Title').textContent = t.aboutPageVal1Title || 'Sustenabilitate';
+      document.getElementById('val1Text').textContent = t.aboutPageVal1Text || 'Încredințați pe energia verde și combustibili regenerabili. Fiecare peleț este o alegere pentru viitor mai curat.';
+      document.getElementById('val2Title').textContent = t.aboutPageVal2Title || 'Eficiență';
+      document.getElementById('val2Text').textContent = t.aboutPageVal2Text || 'Maximizând performanța și minimizând risipă. Peleții noștri oferă cea mai bună putere calorică per kilogram.';
+      document.getElementById('val3Title').textContent = t.aboutPageVal3Title || 'Fiabilitate';
+      document.getElementById('val3Text').textContent = t.aboutPageVal3Text || 'Consistency în fiecare pachet. Clienții noștri știu exact ce așteptă de la PelețiPro.';
+      document.getElementById('val4Title').textContent = t.aboutPageVal4Title || 'Sprijin client';
+      document.getElementById('val4Text').textContent = t.aboutPageVal4Text || 'Orice întrebare merită un răspuns rapid. Echipa noastră este aici pentru a vă ajuta.';
+
+      // Why Choose Us
+      document.getElementById('whyTitle').textContent = t.aboutPageWhy || 'De ce să alegeți PelețiPro?';
+      document.getElementById('why1Title').textContent = t.aboutPageWhy1Title || 'Calitate Certificată';
+      document.getElementById('why1Text').textContent = t.aboutPageWhy1Text || 'Peleții noștri îndeplinesc standardele europene DIN+ și ISO. Fiecare lot este testat pentru putere calorică, umiditate și durabilitate.';
+      document.getElementById('why2Title').textContent = t.aboutPageWhy2Title || 'Livrare Rapidă';
+      document.getElementById('why2Text').textContent = t.aboutPageWhy2Text || 'Comenzi procesate în 24h și livrări în 48-72h la majoritatea locațiilor. Track-and-trace pentru fiecare transport.';
+      document.getElementById('why3Title').textContent = t.aboutPageWhy3Title || 'Prețuri Competitive';
+      document.getElementById('why3Text').textContent = t.aboutPageWhy3Text || 'Oferim cele mai bune prețuri pe piață, cu discounturi pentru cantități mari și clienți fideli.';
+      document.getElementById('why4Title').textContent = t.aboutPageWhy4Title || 'Suport Dedicat';
+      document.getElementById('why4Text').textContent = t.aboutPageWhy4Text || 'Echipa noastră este disponibilă prin telefon, email și WhatsApp. Vorbim limba ta și înțelegem nevoile tale.';
+      document.getElementById('why5Title').textContent = t.aboutPageWhy5Title || 'Păduri Sustenabile';
+      document.getElementById('why5Text').textContent = t.aboutPageWhy5Text || 'Toți furnizorii noștri respectă protocoalele de gestionare durabilă a pădurilor și certificări FSC.';
+      document.getElementById('why6Title').textContent = t.aboutPageWhy6Title || 'Garanție de Satisfacție';
+      document.getElementById('why6Text').textContent = t.aboutPageWhy6Text || 'Dacă nu ești satisfăcut, oferim returnuri fără probleme și rambursări complete.';
+
+      // Quality
+      document.getElementById('qualityTitle').textContent = t.aboutPageQuality || 'Standarde de Calitate';
+      document.getElementById('stat1Number').textContent = '<10%';
+      document.getElementById('stat1Text').textContent = t.aboutPageQualityStat1 || 'Umiditate maximă pentru ardere optimă';
+      document.getElementById('stat2Number').textContent = '4.8+';
+      document.getElementById('stat2Text').textContent = t.aboutPageQualityStat2 || 'kWh/kg — Putere calorică minima';
+      document.getElementById('stat3Number').textContent = '100%';
+      document.getElementById('stat3Text').textContent = t.aboutPageQualityStat3 || 'Lemn natural, fără aditivi chimici';
+      document.getElementById('stat4Number').textContent = 'DIN+';
+      document.getElementById('stat4Text').textContent = t.aboutPageQualityStat4 || 'Certificare europeană de calitate';
+
+      // CTA
+      document.getElementById('ctaTitle').textContent = t.aboutPageCtaTitle || 'Gata să te alături echipei noastre?';
+      document.getElementById('ctaText').textContent = t.aboutPageCtaText || 'Explorează gama noastră completă de peleți și găsește soluția perfectă pentru casa ta.';
+      document.getElementById('shopBtn').textContent = t.aboutPageShop || 'Cumpără acum';
+      document.getElementById('contactBtn').textContent = t.aboutPageContactBtn || 'Contactează-ne';
+
+      // Footer
+      document.getElementById('footerLinksTitle').textContent = t.footerLinks || 'Link-uri utile';
+      document.getElementById('footerProducts').textContent = t.products || 'Produse';
+      document.getElementById('footerAbout').textContent = t.about || 'Despre noi';
+      document.getElementById('footerTerms').textContent = t.footerTerms || 'Termeni și condiții';
+      document.getElementById('footerPayTitle').textContent = t.footerPayTitle || 'Plăți & Livrare';
+      document.getElementById('footerPayText').textContent = t.footerPayText || 'Plăți la livrare sau transfer bancar. Livrări în 48-72h în majoritatea zonelor.';
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+        // Product Info
+        document.getElementById('productsInfoTitle').textContent = t.productsInfoTitle || 'Informații Despre Produse';
+        document.getElementById('certTitle').textContent = t.certTitle || 'Certificări și Standarde';
+        document.getElementById('certText').textContent = t.certText || 'Toate peleții noștri sunt certificați conform standardelor europene de calitate.';
+        if (t.certList) document.getElementById('certList').innerHTML = t.certList.split(';').map(item => '<li>' + item + '</li>').join('');
+      
+        document.getElementById('sourceTitle').textContent = t.sourceTitle || 'Origine și Surse';
+        document.getElementById('sourceText').textContent = t.sourceText || 'Peleții noștri provin din lemn natural de calitate superioară.';
+        if (t.sourceList) document.getElementById('sourceList').innerHTML = t.sourceList.split(';').map(item => '<li>' + item + '</li>').join('');
+
+        // Delivery
+        document.getElementById('deliveryTitle').textContent = t.deliveryTitle || 'Livrare și Logistică';
+        document.getElementById('deliverySpeedTitle').textContent = t.deliverySpeedTitle || 'Livrare Rapidă';
+        document.getElementById('deliverySpeedText').textContent = t.deliverySpeedText || 'Procesăm comenzile în maxim 24 de ore.';
+        document.getElementById('packagingTitle').textContent = t.packagingTitle || 'Ambalare Sigură';
+        document.getElementById('packagingText').textContent = t.packagingText || 'Peleții sunt ambalați în saci rezistenți.';
+        document.getElementById('coverageTitle').textContent = t.coverageTitle || 'Zona de Acoperire';
+        document.getElementById('coverageText').textContent = t.coverageText || 'Livrare în toată România.';
+        document.getElementById('priceTitle').textContent = t.priceTitle || 'Politica de Prețuri';
+        document.getElementById('priceText').textContent = t.priceText || 'Prețuri competitive cu discounturi.';
+
+        // QC
+        document.getElementById('qcTitle').textContent = t.qcTitle || 'Procesul de Control al Calității';
+        document.getElementById('qcIntro').textContent = t.qcIntro || 'Fiecare lot trece printr-un proces riguros.';
+        document.getElementById('qcStep1Title').textContent = t.qcStep1Title || 'Selecție Materii Prime';
+        document.getElementById('qcStep1Text').textContent = t.qcStep1Text || 'Inspectarea și selecția lemnului brut.';
+        document.getElementById('qcStep2Title').textContent = t.qcStep2Title || 'Prelucrare Controlată';
+        document.getElementById('qcStep2Text').textContent = t.qcStep2Text || 'Peletizare în instalații moderne.';
+        document.getElementById('qcStep3Title').textContent = t.qcStep3Title || 'Testare Laborator';
+        document.getElementById('qcStep3Text').textContent = t.qcStep3Text || 'Analiză completă a fiecărui lot.';
+        document.getElementById('qcStep4Title').textContent = t.qcStep4Title || 'Ambalare și Livrare';
+        document.getElementById('qcStep4Text').textContent = t.qcStep4Text || 'Protejare și livrare sigură.';
+
+        // Environment
+        document.getElementById('envTitle').textContent = t.envTitle || 'Angajament Ambiental';
+        document.getElementById('env1Title').textContent = t.env1Title || 'Energie Regenerabilă';
+        document.getElementById('env1Text').textContent = t.env1Text || 'Peleții din lemn sunt o sursă de energie regenerabilă.';
+        document.getElementById('env2Title').textContent = t.env2Title || 'Păduri Sustenabile';
+        document.getElementById('env2Text').textContent = t.env2Text || 'Susținem gestionarea durabilă a pădurilor.';
+        document.getElementById('env3Title').textContent = t.env3Title || 'Reducerea Deșeurilor';
+        document.getElementById('env3Text').textContent = t.env3Text || 'Producem peleți din reszuri de lemn.';
+
+        // Testimonials
+        document.getElementById('testimonialTitle').textContent = t.testimonialTitle || 'Ce Spun Clienții Noștri';
+        document.getElementById('test1Quote').textContent = t.test1Quote || 'Peleții PelețiPro sunt de calitate excepțională.';
+        document.getElementById('test1Author').textContent = t.test1Author || 'Clieent 1';
+        document.getElementById('test2Quote').textContent = t.test2Quote || 'Livrarea a fost rapidă.';
+        document.getElementById('test2Author').textContent = t.test2Author || 'Clieent 2';
+        document.getElementById('test3Quote').textContent = t.test3Quote || 'Recomand PelețiPro.';
+        document.getElementById('test3Author').textContent = t.test3Author || 'Clieent 3';
+
+        // Contact
+        document.getElementById('contactInfoTitle').textContent = t.contactInfoTitle || 'Informații de Contact';
+        document.getElementById('addressTitle').textContent = t.addressTitle || 'Adresă';
+        document.getElementById('addressText').textContent = t.addressText || 'Str. Exemplu 12, Oraș';
+        document.getElementById('phoneTitle').textContent = t.phoneTitle || 'Telefon';
+        document.getElementById('phoneText').textContent = t.phoneText || '+40 123 456 789';
+        document.getElementById('emailTitle').textContent = t.emailTitle || 'Email';
+        document.getElementById('emailText').textContent = t.emailText || 'contact@peletipro.ro';
+        document.getElementById('hoursTitle').textContent = t.hoursTitle || 'Program de Lucru';
+        document.getElementById('hoursText').textContent = t.hoursText || 'Luni - Vineri: 08:00 - 18:00';
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', applyAboutPageTranslations);
+
+    // Listen for language changes
+    const originalSetLanguage = window.setLanguage;
+    window.setLanguage = function(lang) {
+      originalSetLanguage(lang);
+      applyAboutPageTranslations();
+    };
+  </script>
+</body>
+</html>
